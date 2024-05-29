@@ -1,8 +1,11 @@
 package tech.intellispaces.ixora.snakeyaml;
 
-import intellispaces.ixora.structures.properties.InvalidPropertyException;
-import intellispaces.ixora.structures.properties.Properties;
 import org.yaml.snakeyaml.Yaml;
+import tech.intellispaces.ixora.commons.structures.properties.MapBasedPropertiesHandleImpl;
+import tech.intellispaces.ixora.structures.properties.BytesToPropertiesTransition;
+import tech.intellispaces.ixora.structures.properties.InvalidPropertyException;
+import tech.intellispaces.ixora.structures.properties.PropertiesHandle;
+import tech.intellispaces.ixora.structures.properties.StringToPropertiesTransition;
 import tech.intellispacesframework.core.annotation.Mapper;
 import tech.intellispacesframework.core.annotation.Unit;
 
@@ -13,23 +16,23 @@ public class SnakeyamlGuide implements StringToPropertiesTransition, BytesToProp
 
   @Mapper
   @Override
-  public Properties stringToProperties(String string) throws InvalidPropertyException {
+  public PropertiesHandle stringToProperties(String string) throws InvalidPropertyException {
     try {
       var yaml = new Yaml();
-      return new MapBasedPropertiesImpl(yaml.load(string));
+      return new MapBasedPropertiesHandleImpl(yaml.load(string));
     } catch (Exception e) {
-      throw InvalidPropertyException.withCauseAndMessage(e, "Failed to load YAML");
+      throw InvalidPropertyException.withCauseAndMessage(e, "Failed to read YAML");
     }
   }
 
   @Mapper
   @Override
-  public Properties bytesToProperties(byte[] bytes) throws InvalidPropertyException {
+  public PropertiesHandle bytesToProperties(byte[] bytes) throws InvalidPropertyException {
     try {
       var yaml = new Yaml();
-      return new MapBasedPropertiesImpl(yaml.load(new ByteArrayInputStream(bytes)));
+      return new MapBasedPropertiesHandleImpl(yaml.load(new ByteArrayInputStream(bytes)));
     } catch (Exception e) {
-      throw InvalidPropertyException.withCauseAndMessage(e, "Failed to load YAML");
+      throw InvalidPropertyException.withCauseAndMessage(e, "Failed to read YAML");
     }
   }
 }
