@@ -6,8 +6,8 @@ import tech.intellispaces.ixora.structures.properties.BytesToPropertiesTransitio
 import tech.intellispaces.ixora.structures.properties.InvalidPropertyException;
 import tech.intellispaces.ixora.structures.properties.PropertiesHandle;
 import tech.intellispaces.ixora.structures.properties.StringToPropertiesTransition;
-import tech.intellispacesframework.core.annotation.Mapper;
-import tech.intellispacesframework.core.annotation.Unit;
+import tech.intellispaces.framework.core.annotation.Mapper;
+import tech.intellispaces.framework.core.annotation.Unit;
 
 import java.io.ByteArrayInputStream;
 
