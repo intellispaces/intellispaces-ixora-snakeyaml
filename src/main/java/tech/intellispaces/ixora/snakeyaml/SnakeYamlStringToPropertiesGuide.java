@@ -4,9 +4,9 @@ import org.yaml.snakeyaml.Yaml;
 import tech.intellispaces.framework.core.annotation.Guide;
 import tech.intellispaces.framework.core.annotation.Mapper;
 import tech.intellispaces.ixora.commons.structures.properties.MapBasedProperties;
-import tech.intellispaces.ixora.structures.exception.InvalidPropertyException;
-import tech.intellispaces.ixora.structures.properties.PropertiesHandle;
-import tech.intellispaces.ixora.structures.properties.YamlStringToPropertiesGuide;
+import intellispaces.ixora.structures.exception.InvalidPropertyException;
+import intellispaces.ixora.structures.properties.PropertiesHandle;
+import intellispaces.ixora.structures.properties.YamlStringToPropertiesGuide;
 
 @Guide
 public class SnakeYamlStringToPropertiesGuide implements YamlStringToPropertiesGuide {
