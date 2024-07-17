@@ -4,12 +4,12 @@ import intellispaces.ixora.structures.properties.YamlStringToPropertiesGuide;
 import tech.intellispaces.ixora.structures.properties.YamlStringToPropertiesGuideTest;
 
 /**
- * Tests for {@link SnakeYamlStringToPropertiesGuide} class.
+ * Tests for {@link YamlStringToPropertiesSnakeyamlGuide} class.
  */
-public class SnakeYamlStringToPropertiesGuideTest extends YamlStringToPropertiesGuideTest {
+public class YamlStringToPropertiesSnakeyamlGuideTest extends YamlStringToPropertiesGuideTest {
 
   @Override
   public YamlStringToPropertiesGuide guide() {
-    return new SnakeYamlStringToPropertiesGuide();
+    return new YamlStringToPropertiesSnakeyamlGuide();
   }
 }

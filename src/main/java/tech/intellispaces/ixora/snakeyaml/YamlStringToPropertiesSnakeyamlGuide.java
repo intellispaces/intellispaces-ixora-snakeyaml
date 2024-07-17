@@ -9,7 +9,7 @@ import intellispaces.ixora.structures.properties.PropertiesHandle;
 import intellispaces.ixora.structures.properties.YamlStringToPropertiesGuide;
 
 @Guide
-public class SnakeYamlStringToPropertiesGuide implements YamlStringToPropertiesGuide {
+public class YamlStringToPropertiesSnakeyamlGuide implements YamlStringToPropertiesGuide {
 
   @Mapper
   @Override
