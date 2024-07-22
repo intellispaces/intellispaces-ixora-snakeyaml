@@ -8,7 +8,7 @@
     </parent>
 
     <groupId>mindstructs</groupId>
-    <artifactId>ixora-snakeyaml</artifactId>
+    <artifactId>mindstructs-snakeyaml</artifactId>
     <packaging>jar</packaging>
 
     <build>
