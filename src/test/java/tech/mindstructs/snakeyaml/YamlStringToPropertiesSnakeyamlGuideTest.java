@@ -1,7 +1,8 @@
-package tech.intellispaces.ixora.snakeyaml;
+package tech.mindstructs.snakeyaml;
 
-import intellispaces.ixora.structures.properties.YamlStringToPropertiesGuide;
-import tech.intellispaces.ixora.structures.properties.YamlStringToPropertiesGuideTest;
+import intellispaces.ixora.mindstructs.structures.properties.YamlStringToPropertiesGuide;
+
+import tech.mindstructs.test.structures.properties.YamlStringToPropertiesGuideTest;
 
 /**
  * Tests for {@link YamlStringToPropertiesSnakeyamlGuide} class.

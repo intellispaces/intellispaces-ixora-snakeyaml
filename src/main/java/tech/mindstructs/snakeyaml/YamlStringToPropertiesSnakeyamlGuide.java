@@ -1,12 +1,14 @@
-package tech.intellispaces.ixora.snakeyaml;
+package tech.mindstructs.snakeyaml;
+
+import intellispaces.ixora.mindstructs.structures.exception.InvalidPropertyException;
+import intellispaces.ixora.mindstructs.structures.properties.PropertiesHandle;
+import intellispaces.ixora.mindstructs.structures.properties.YamlStringToPropertiesGuide;
 
 import org.yaml.snakeyaml.Yaml;
+
 import tech.intellispaces.framework.core.annotation.Guide;
 import tech.intellispaces.framework.core.annotation.Mapper;
-import tech.intellispaces.ixora.commons.structures.properties.MapBasedProperties;
-import intellispaces.ixora.structures.exception.InvalidPropertyException;
-import intellispaces.ixora.structures.properties.PropertiesHandle;
-import intellispaces.ixora.structures.properties.YamlStringToPropertiesGuide;
+import tech.mindstructs.structures.properties.MapBasedProperties;
 
 @Guide
 public class YamlStringToPropertiesSnakeyamlGuide implements YamlStringToPropertiesGuide {
