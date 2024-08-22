@@ -1,8 +1,8 @@
-package tech.intellispaces.ixora.snakeyaml;
+package intellispaces.ixora.snakeyaml;
 
 import intellispaces.ixora.structures.properties.YamlStringToPropertiesMapper;
 
-import tech.intellispaces.ixora.test.structures.properties.YamlStringToPropertiesMapperTest;
+import intellispaces.ixora.test.structures.properties.YamlStringToPropertiesMapperTest;
 
 /**
  * Tests for {@link YamlStringToPropertiesSnakeyamlMapper} class.
