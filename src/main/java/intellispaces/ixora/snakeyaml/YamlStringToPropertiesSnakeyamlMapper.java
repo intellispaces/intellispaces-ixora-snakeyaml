@@ -1,7 +1,7 @@
 package intellispaces.ixora.snakeyaml;
 
 import intellispaces.ixora.structures.exception.InvalidPropertyException;
-import intellispaces.ixora.structures.properties.PropertiesHandle;
+import intellispaces.ixora.structures.properties.Properties;
 import intellispaces.ixora.structures.properties.YamlStringToPropertiesMapper;
 
 import org.yaml.snakeyaml.Yaml;
@@ -15,7 +15,7 @@ public class YamlStringToPropertiesSnakeyamlMapper implements YamlStringToProper
 
   @Mapper
   @Override
-  public PropertiesHandle yamlStringToProperties(String string) throws InvalidPropertyException {
+  public Properties yamlStringToProperties(String string) throws InvalidPropertyException {
     try {
       var yaml = new Yaml();
       return new MapBasedProperties(yaml.load(string));
