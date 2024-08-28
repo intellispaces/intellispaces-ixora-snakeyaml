@@ -2,7 +2,7 @@ package intellispaces.ixora.snakeyaml;
 
 import intellispaces.ixora.structures.exception.InvalidPropertyException;
 import intellispaces.ixora.structures.properties.Properties;
-import intellispaces.ixora.structures.properties.YamlStringToPropertiesMapper;
+import intellispaces.ixora.structures.properties.YamlStringToPropertiesGuide;
 
 import org.yaml.snakeyaml.Yaml;
 
@@ -11,7 +11,7 @@ import intellispaces.core.annotation.Mapper;
 import intellispaces.ixora.structures.properties.MapBasedProperties;
 
 @Guide
-public class YamlStringToPropertiesSnakeyamlMapper implements YamlStringToPropertiesMapper {
+public class SnakeyamlGuide implements YamlStringToPropertiesGuide {
 
   @Mapper
   @Override
@@ -20,7 +20,7 @@ public class YamlStringToPropertiesSnakeyamlMapper implements YamlStringToProper
       var yaml = new Yaml();
       return new MapBasedProperties(yaml.load(string));
     } catch (Exception e) {
-      throw InvalidPropertyException.withCauseAndMessage(e, "Failed to load YAML");
+      throw InvalidPropertyException.withCauseAndMessage(e, "Failed to read YAML string");
     }
   }
 }
