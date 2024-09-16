@@ -2,13 +2,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>intellispaces</groupId>
+        <groupId>intellispaces-parent</groupId>
         <artifactId>intellispaces-parent-pom</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>intellispaces</groupId>
-    <artifactId>ixora-snakeyaml</artifactId>
+    <groupId>intellispaces-ixora</groupId>
+    <artifactId>intellispaces-ixora-snakeyaml</artifactId>
     <packaging>jar</packaging>
 
     <build>
@@ -29,15 +29,15 @@
     </build>
 
     <dependencies>
-        <!-- Mindstructs -->
+        <!-- Intellispaces -->
         <dependency>
-            <groupId>intellispaces</groupId>
-            <artifactId>ixora-structures-ontology</artifactId>
+            <groupId>intellispaces-ixora</groupId>
+            <artifactId>intellispaces-ixora-structures-ontology</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>intellispaces</groupId>
-            <artifactId>ixora-structures</artifactId>
+            <groupId>intellispaces-ixora</groupId>
+            <artifactId>intellispaces-ixora-structures</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
@@ -65,8 +65,8 @@
             <artifactId>mockito-core</artifactId>
         </dependency>
         <dependency>
-            <groupId>intellispaces</groupId>
-            <artifactId>ixora-structures-test</artifactId>
+            <groupId>intellispaces-ixora</groupId>
+            <artifactId>intellispaces-ixora-structures-test</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>

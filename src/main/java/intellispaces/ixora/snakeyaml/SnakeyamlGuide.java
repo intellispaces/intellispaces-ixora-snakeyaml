@@ -6,8 +6,8 @@ import intellispaces.ixora.structures.properties.YamlStringToPropertiesGuide;
 
 import org.yaml.snakeyaml.Yaml;
 
-import intellispaces.core.annotation.Guide;
-import intellispaces.core.annotation.Mapper;
+import intellispaces.framework.core.annotation.Guide;
+import intellispaces.framework.core.annotation.Mapper;
 import intellispaces.ixora.structures.properties.MapBasedProperties;
 
 @Guide
