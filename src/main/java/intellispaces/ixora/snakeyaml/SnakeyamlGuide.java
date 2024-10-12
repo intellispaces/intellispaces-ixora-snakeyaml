@@ -1,9 +1,9 @@
 package intellispaces.ixora.snakeyaml;
 
-import intellispaces.ixora.structures.association.Properties;
-import intellispaces.ixora.structures.association.Propertieses;
-import intellispaces.ixora.structures.association.YamlStringToPropertiesGuide;
-import intellispaces.ixora.structures.exception.InvalidPropertyException;
+import intellispaces.ixora.data.association.Properties;
+import intellispaces.ixora.data.association.Propertieses;
+import intellispaces.ixora.data.association.YamlStringToPropertiesGuide;
+import intellispaces.ixora.data.exception.InvalidPropertyException;
 
 import org.yaml.snakeyaml.Yaml;
 

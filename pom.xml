@@ -32,12 +32,12 @@
         <!-- Intellispaces -->
         <dependency>
             <groupId>intellispaces-ixora</groupId>
-            <artifactId>intellispaces-ixora-structures-ontology</artifactId>
+            <artifactId>intellispaces-ixora-data-ontology</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>intellispaces-ixora</groupId>
-            <artifactId>intellispaces-ixora-structures</artifactId>
+            <artifactId>intellispaces-ixora-data</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
 
@@ -66,7 +66,7 @@
         </dependency>
         <dependency>
             <groupId>intellispaces-ixora</groupId>
-            <artifactId>intellispaces-ixora-structures-test</artifactId>
+            <artifactId>intellispaces-ixora-data-test</artifactId>
             <version>0.0.1-SNAPSHOT</version>
             <scope>test</scope>
         </dependency>
