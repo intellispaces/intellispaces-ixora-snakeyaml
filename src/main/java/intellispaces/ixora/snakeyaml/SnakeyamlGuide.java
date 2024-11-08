@@ -5,6 +5,7 @@ import intellispaces.ixora.data.association.Propertieses;
 import intellispaces.ixora.data.association.YamlStringToPropertiesGuide;
 import intellispaces.ixora.data.exception.InvalidPropertyException;
 
+import intellispaces.ixora.data.exception.InvalidPropertyExceptions;
 import org.yaml.snakeyaml.Yaml;
 
 import intellispaces.jaquarius.annotation.Guide;
@@ -20,7 +21,7 @@ public class SnakeyamlGuide implements YamlStringToPropertiesGuide {
       var yaml = new Yaml();
       return Propertieses.of(yaml.load(string));
     } catch (Exception e) {
-      throw InvalidPropertyException.withCauseAndMessage(e, "Failed to read YAML string");
+      throw InvalidPropertyExceptions.withCauseAndMessage(e, "Failed to read YAML string");
     }
   }
 }
