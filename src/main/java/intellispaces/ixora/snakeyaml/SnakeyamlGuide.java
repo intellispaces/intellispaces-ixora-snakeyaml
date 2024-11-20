@@ -4,12 +4,10 @@ import intellispaces.ixora.data.association.Properties;
 import intellispaces.ixora.data.association.Propertieses;
 import intellispaces.ixora.data.association.YamlStringToPropertiesGuide;
 import intellispaces.ixora.data.exception.InvalidPropertyException;
-
 import intellispaces.ixora.data.exception.InvalidPropertyExceptions;
-import org.yaml.snakeyaml.Yaml;
-
 import intellispaces.jaquarius.annotation.Guide;
 import intellispaces.jaquarius.annotation.Mapper;
+import org.yaml.snakeyaml.Yaml;
 
 @Guide
 public class SnakeyamlGuide implements YamlStringToPropertiesGuide {
