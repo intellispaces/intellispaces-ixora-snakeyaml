@@ -1,7 +1,7 @@
-package intellispaces.ixora.snakeyaml;
+package tech.intellispaces.ixora.snakeyaml;
 
-import intellispaces.ixora.data.association.YamlStringToPropertiesGuide;
-import intellispaces.ixora.data.test.properties.YamlStringToPropertiesGuideTest;
+import tech.intellispaces.ixora.data.association.YamlStringToPropertiesGuide;
+import tech.intellispaces.ixora.data.test.properties.YamlStringToPropertiesGuideTest;
 
 /**
  * Tests for {@link SnakeyamlGuide} class.
