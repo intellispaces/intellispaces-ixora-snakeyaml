@@ -1,15 +1,15 @@
 package tech.intellispaces.ixora.snakeyaml;
 
-import tech.intellispaces.ixora.data.association.YamlStringToPropertiesGuide;
-import tech.intellispaces.ixora.data.test.properties.YamlStringToPropertiesGuideTest;
+import tech.intellispaces.ixora.data.association.YamlStringToDictionaryGuide;
+import tech.intellispaces.ixora.data.test.dictionary.YamlStringToDictionaryGuideTest;
 
 /**
  * Tests for {@link SnakeyamlGuide} class.
  */
-public class SnakeyamlGuideTest extends YamlStringToPropertiesGuideTest {
+public class SnakeyamlGuideTest extends YamlStringToDictionaryGuideTest {
 
   @Override
-  public YamlStringToPropertiesGuide guide() {
+  public YamlStringToDictionaryGuide guide() {
     return new SnakeyamlGuide();
   }
 }
